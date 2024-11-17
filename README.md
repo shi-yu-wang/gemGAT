@@ -30,6 +30,8 @@ A sample dataset can be found [here](https://drive.google.com/drive/folders/1z_q
 
 `graph_out_Brain-Amygdalaadni.csv`: This csv file saves gene-gene netnetwork in the target tissue. The first row and the first column are both IDs for the same set of genes in the same order. Note that genes of the source tissue are covered by those of the target tissue. We order genes in the source tissue before genes that are in the target tissue but not in the source tissue.
 
+All datasets used in our paper are processed in the same way introduced above from the [GTEX v8 dataset](https://gtexportal.org/home/) and [ADNI](https://adni.loni.usc.edu/) dataset.
+
 ## Training
 
 Create your own dataset of follow the above steps to download [sample dataset](https://drive.google.com/drive/folders/1z_qdChCJM3GdjBTQfQWKjuK7oyF3oXir?usp=drive_link). Put datasets in `data` folder. Run the following code to train the model:
