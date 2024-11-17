@@ -54,10 +54,11 @@ You can change the name of your data, but make sure your datasets' name follow t
 
 The training process will save the model as `<your data name>.pt` in the folder, on which you should perform inference.
 
-## testing
+## Testing
 
 Once you have trained the model save as `<your data name>.pt`, you can execute model inference by simply setting `--train` as False.
 
 `python train.py --train False --nhidatt 1024 --nheads 8 --data Brain-Amygdalaadni`
 
 You can change the name of your data, but make sure your datasets' name follow the format `expr_in_<your data name>.csv`, `expr_out_<your data name>.csv`, `graph_in_<your data name>.csv` and `graph_out_<your data name>.csv`. Note that the program with automatically use the testing set. Inference will produce a file `<your data name>_inference.csv`, which each row as a subject and each column as a gene, and elements as predicted gene expressions.
+
