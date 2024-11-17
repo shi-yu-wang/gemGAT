@@ -30,12 +30,11 @@ class GCNLayer(nn.Module):
 
 
 class gemGAT(nn.Module):
-    def __init__(self, ngene_in, ngene_out, nhid, nhidatt, nheads):
+    def __init__(self, ngene_in, ngene_out, nhidatt, nheads):
         super(gemGAT, self).__init__()
         
         self.ngene_in = ngene_in
         self.ngene_out = ngene_out
-        self.nhid = nhid
         self.nheads = nheads
         self.nhidatt = nhidatt
 

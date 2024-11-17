@@ -20,7 +20,6 @@ parser.add_argument('--data', type=str, default="Brain-Amygdalaadni")
 parser.add_argument('--train', type=str, default="True")
 parser.add_argument('--eval', type=str, default="False")
 parser.add_argument('--epoch', type=int, default=300)
-parser.add_argument('--nhid', type=int, default=512)
 parser.add_argument('--nhidatt', type=int, default=1024)
 parser.add_argument('--nheads', type=int, default=8)
 parser.add_argument('--lr', type=float, default=0.001)
@@ -114,7 +113,7 @@ if args.train:
     torch.backends.cudnn.benchmark = False
     torch.backends.cudnn.deterministic = True
     # initialize model
-    model = gemGAT(ngene_in=adj_ng, ngene_out=adj_ms_ng, nhid = args.nhid, nhidatt=args.nhidatt, nheads=args.nheads).cuda()
+    model = gemGAT(ngene_in=adj_ng, ngene_out=adj_ms_ng, nhidatt=args.nhidatt, nheads=args.nheads).cuda()
     
     optimizer = optim.SGD(model.parameters(), lr=args.lr)
     lr_scheduler = optim.lr_scheduler.MultiStepLR(
@@ -189,7 +188,7 @@ if args.train:
     
         print("====================================================")
 else:
-    model = gemGAT(ngene_in=adj_ng, ngene_out=adj_ms_ng, nhid = args.nhid, nhidatt=args.nhidatt, nheads=args.nheads).cuda()
+    model = gemGAT(ngene_in=adj_ng, ngene_out=adj_ms_ng, nhidatt=args.nhidatt, nheads=args.nheads).cuda()
 
     model.load_state_dict(torch.load(f"{args.data}.pt")['model_state_dict'])
     model.eval()
