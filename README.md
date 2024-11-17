@@ -8,6 +8,8 @@ gemGAT requires the following dataset to train the model:
 
 2. Gene-gene network (e.g., co-expression network) in both source and the target tissue.
 
+A sample dataset can be found [here](https://drive.google.com/drive/folders/1z_qdChCJM3GdjBTQfQWKjuK7oyF3oXir?usp=drive_link).
+
 ## Training
 
 ## testing
