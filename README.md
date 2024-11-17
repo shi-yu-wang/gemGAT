@@ -1,9 +1,9 @@
 # gemGAT
-This is the official repo of gemGAT: **Cross-tissue Graph Attention Networks for Semi-supervised Gene Expression Prediction**. gemGAT aims to enhance gene expression prediction across different tissues.
+This is the official repo of gemGAT: **Cross-tissue Graph Attention Networks for Semi-supervised Gene Expression Prediction**. gemGAT aims to enhance gene expression prediction across different tissues using advanced graph neural networks.
 
 ## Dependencies
 
-The model is trained on NVIDIA GeForce RTX 3090. Here are dependencies in Python. Note that you may upgrade those packages to fit your data and experimental settings using advanced graph neural networks.
+The model is trained on NVIDIA GeForce RTX 3090. Here are dependencies in Python. Note that you may upgrade those packages to fit your data and experimental settings.
 
 `pytorch`: 1.13.0
 
