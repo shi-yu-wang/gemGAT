@@ -32,4 +32,26 @@ A sample dataset can be found [here](https://drive.google.com/drive/folders/1z_q
 
 ## Training
 
+Create your own dataset of follow the above steps to download [sample dataset](https://drive.google.com/drive/folders/1z_qdChCJM3GdjBTQfQWKjuK7oyF3oXir?usp=drive_link). Put datasets in `data` folder. Run the following code to train the model:
+
+`python .\trainmodelv2.py --train True --epoch 1000 --nhidatt 1024 --nheads 8 --lr 0.001 --data Brain-Amygdalaadni`
+
+`train`: True if training or False if inference
+
+`epoch`: number of epoches for training the model
+
+`nhidatt`: hidden dimension of attention
+
+`nheads`: number of heads in attention
+
+`lr`: learning rate
+
+`data`: your data name
+
+You can change the name of your data, but make sure your datasets' name follow the format `expr_in_<your data name>.csv`, `expr_out_<your data name>.csv`, `graph_in_<your data name>.csv` and `graph_out_<your data name>.csv`. You can also customize your training hyperparameter. To change other model parameters, feel free to do it by modifying parameters in `model.py`. 
+
+The training process will save the model as `<your data name>.pt` in the folder, on which you should perform inference.
+
 ## testing
+
+
