@@ -34,7 +34,7 @@ A sample dataset can be found [here](https://drive.google.com/drive/folders/1z_q
 
 Create your own dataset of follow the above steps to download [sample dataset](https://drive.google.com/drive/folders/1z_qdChCJM3GdjBTQfQWKjuK7oyF3oXir?usp=drive_link). Put datasets in `data` folder. Run the following code to train the model:
 
-`python .\trainmodelv2.py --train True --epoch 1000 --nhidatt 1024 --nheads 8 --lr 0.001 --data Brain-Amygdalaadni`
+`python train.py --train True --epoch 1000 --nhidatt 1024 --nheads 8 --lr 0.001 --data Brain-Amygdalaadni`
 
 `train`: True if training or False if inference
 
@@ -54,8 +54,8 @@ The training process will save the model as `<your data name>.pt` in the folder,
 
 ## testing
 
-Once you have trained the model save as `<your data name>.pt`, you can execute model inference by 
+Once you have trained the model save as `<your data name>.pt`, you can execute model inference by simply setting `--train` as False.
 
-`python .\trainmodelv2.py --train False --nhidatt 1024 --nheads 8 --data Brain-Amygdalaadni`
+`python train.py --train False --nhidatt 1024 --nheads 8 --data Brain-Amygdalaadni`
 
 You can change the name of your data, but make sure your datasets' name follow the format `expr_in_<your data name>.csv`, `expr_out_<your data name>.csv`, `graph_in_<your data name>.csv` and `graph_out_<your data name>.csv`. Note that the program with automatically use the testing set. Inference will produce a file `<your data name>_inference.csv`, which each row as a subject and each column as a gene, and elements as predicted gene expressions.
