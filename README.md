@@ -3,7 +3,7 @@ This is the official repo of gemGAT: **Cross-tissue Graph Attention Networks for
 
 ## Dependencies
 
-The model is trained on NVIDIA GeForce RTX 3090. Here are dependencies in Python. Note that you may upgrade those packages to fit your data and experimental settings.
+The model is trained on NVIDIA GeForce RTX 3090. Here are dependencies in Python. Note that you may upgrade those packages to fit your data and experimental settings using advanced graph neural networks.
 
 `pytorch`: 1.13.0
 
