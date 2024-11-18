@@ -1,5 +1,5 @@
 # gemGAT: Cross-tissue Graph Attention Networks for Semi-supervised Gene Expression Prediction
-This is the official repo of gemGAT: **Cross-tissue Graph Attention Networks for Semi-supervised Gene Expression Prediction**. gemGAT aims to enhance gene expression prediction across different tissues using advanced graph neural networks.
+This is the official repo of gemGAT: [**Cross-tissue Graph Attention Networks for Semi-supervised Gene Expression Prediction**](https://www.biorxiv.org/content/10.1101/2024.11.15.623881v1). gemGAT aims to enhance gene expression prediction across different tissues using advanced graph neural networks.
 
 ## Dependencies
 
